@@ -318,3 +318,13 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .footer__bottom p {
+    display: none;
+  }
+
+  .footer__bottom {
+    justify-content: flex-end;
+  }
+}

@@ -207,6 +207,106 @@
   opacity: 0.5;
 }
 
+/* HERO HEADING - MODERN FONT STYLE */
+
+.hero__copy h1 {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  color: #0f172a;
+}
+
+/* =========================================
+   HERO QUOTATION
+========================================= */
+
+.hero__desc {
+  position: relative;
+
+  max-width: 650px;
+  margin: 0 0 32px;
+
+  padding: 8px 0 8px 30px;
+
+  color: #475569;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: -0.15px;
+
+  text-align: left !important;
+}
+
+/* Large quotation mark */
+.hero__desc::before {
+  content: "“";
+
+  position: absolute;
+  left: 0;
+  top: -8px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #2563eb;
+  opacity: 0.9;
+}
+
+/* Small visual accent */
+.hero__desc::after {
+  content: "";
+
+  position: absolute;
+  left: 1px;
+  bottom: 0;
+
+  width: 3px;
+  height: 42px;
+
+  border-radius: 10px;
+  background: #2563eb;
+}
+
+/* =========================================
+   HERO — MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .hero__copy h1 {
+    max-width: 100%;
+    margin-bottom: 18px;
+
+    font-size: clamp(36px, 10vw, 48px);
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+  }
+
+  .hero__desc {
+    max-width: 100%;
+    margin-bottom: 26px;
+
+    padding-left: 24px;
+
+    font-size: 15px;
+    line-height: 1.65;
+    letter-spacing: 0;
+  }
+
+  .hero__desc::before {
+    top: -5px;
+
+    font-size: 48px;
+  }
+
+  .hero__desc::after {
+    width: 2px;
+    height: 34px;
+  }
+}
 
 /* =========================================
    FLOATING CARDS

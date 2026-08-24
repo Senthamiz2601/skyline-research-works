@@ -21,8 +21,7 @@ import './Home.css';
 
 const stats = [
   { value: '500+', label: 'Research Projects' },
-  { value: '100+', label: 'Publications' },
-  { value: '50', label: 'Tech Projects' },
+  { value: '120+', label: 'Publications' },
   { value: '100%', label: 'Quality Focus' },
 ];
 
@@ -81,15 +80,11 @@ export default function Home() {
 
           <div className="hero__copy">
             <h1>
-              Transforming Ideas into Research, Projects &amp; Innovation
+              Transforming Ideas into Research &amp; Innovation
             </h1>
 
             <p className="hero__desc" style={{ textAlign: 'justify' }}>
-              Your Partner in Research Guidance, Project Development &amp;
-              Publication Support. From research ideas to real-world
-              implementation, Skyline Research Works helps students,
-              researchers and innovators turn their ideas into meaningful
-              academic and technological outcomes.
+              “From research ideas to real-world solutions, we bring the right guidance, technology and expertise to turn your vision into something meaningful.”
             </p>
 
             <div className="hero__ctas">
@@ -153,18 +148,18 @@ export default function Home() {
                 <div className="hero-visual__metrics">
 
                   <div>
-                    <strong>25</strong>
-                    <span>Active Projects</span>
-                  </div>
-
-                  <div>
                     <strong>96%</strong>
                     <span>Success Rate</span>
                   </div>
 
                   <div>
-                    <strong>18</strong>
-                    <span>IEEE Works</span>
+                    <strong>24/7</strong>
+                    <span>Support</span>
+                  </div>
+
+                  <div>
+                    <strong>Ideas</strong>
+                    <span>Real Outcomes</span>
                   </div>
 
                 </div>
