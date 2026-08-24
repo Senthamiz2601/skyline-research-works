@@ -310,21 +310,39 @@
 }
 
 /* =========================================
-   MOBILE FOOTER
+   MOBILE FOOTER REFINEMENT
 ========================================= */
 
 @media (max-width: 768px) {
-  .footer__contact {
-    display: none;
-  }
-}
 
-@media (max-width: 768px) {
-  .footer__bottom p {
-    display: none;
+  .footer__contact {
+    display: block;
   }
+
+ @media (max-width: 768px) {
 
   .footer__bottom {
-    justify-content: flex-end;
+    min-height: auto;
+    padding-top: 24px;
+    padding-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 18px;
   }
+
+  .footer__bottom p {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer__bottom-right {
+    width: auto;
+    justify-content: center;
+  }
+
+}
+
 }
