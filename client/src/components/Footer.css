@@ -308,3 +308,13 @@
     justify-content: flex-start;
   }
 }
+
+/* =========================================
+   MOBILE FOOTER
+========================================= */
+
+@media (max-width: 768px) {
+  .footer__contact {
+    display: none;
+  }
+}
