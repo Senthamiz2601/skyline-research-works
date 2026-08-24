@@ -48,7 +48,6 @@ export default function Footer() {
           </ul>
         </div>
 
-
         {/* Company */}
         <div className="footer__column">
           <h5>Company</h5>
@@ -119,12 +118,6 @@ export default function Footer() {
 
         <div className="footer__bottom-right">
 
-          <Link
-            to="/admin/login"
-            className="footer__admin-link"
-          >
-            Admin
-          </Link>
 
           <button
             type="button"
