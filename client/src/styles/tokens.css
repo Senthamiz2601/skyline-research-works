@@ -1,0 +1,38 @@
+:root {
+  /* Color — from Figma */
+  --color-primary: #0058be;
+  --color-primary-tint: #eef4ff;
+  --color-card-bg: #f8f9ff;
+  --color-text: #000000;
+  --color-text-muted: #45464d;
+  --color-border: #c6c6cd;
+  --color-border-soft: rgba(198, 198, 205, 0.3);
+  --color-white: #ffffff;
+
+  /* Typography — from Figma */
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --fs-h1: 48px;
+  --lh-h1: 56px;
+  --fs-h2: 32px;
+  --lh-h2: 40px;
+  --fs-h3: 24px;
+  --lh-h3: 32px;
+  --fs-body-lg: 18px;
+  --lh-body-lg: 28px;
+  --fs-body: 14px;
+  --lh-body: 20px;
+  --fs-label: 12px;
+  --lh-label: 16px;
+
+  /* Radius / shadow — from Figma */
+  --radius-btn: 8px;
+  --radius-card: 12px;
+  --shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.05);
+  --shadow-hero-image: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Layout */
+  --max-width: 1280px;
+  --gutter: 24px;
+}
