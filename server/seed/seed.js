@@ -2,6 +2,10 @@
 // so the site is browsable immediately after `npm run seed`.
 // Run with: npm run seed  (requires MONGODB_URI, SEED_ADMIN_EMAIL, SEED_ADMIN_PASSWORD in .env)
 require('dotenv').config();
+
+const dns = require('dns');
+dns.setServers(['8.8.8.8', '1.1.1.1']);
+
 const mongoose = require('mongoose');
 const Admin = require('../models/Admin');
 const Service = require('../models/Service');
@@ -27,7 +31,11 @@ const faqs = [
 ];
 
 const run = async () => {
-  await mongoose.connect(process.env.MONGODB_URI);
+  await mongoose.connect(process.env.MONGODB_URI, {
+    tls: true,
+    serverSelectionTimeoutMS: 15000,
+    connectTimeoutMS: 15000,
+  });
   console.log('Connected. Seeding...');
 
   const email = process.env.SEED_ADMIN_EMAIL;
