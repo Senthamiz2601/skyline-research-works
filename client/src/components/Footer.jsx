@@ -81,13 +81,6 @@ export default function Footer() {
             </a>
           </div>
 
-          <a
-            className="footer__email"
-            href="mailto:skylineresearch.works@gmail.com"
-          >
-            skylineresearch.works@gmail.com
-          </a>
-
           <div className="footer__location">
             <FaMapMarkerAlt />
             <span>Trichy - 620002</span>
